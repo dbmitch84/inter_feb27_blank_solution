@@ -10,6 +10,19 @@ namespace feb27_week5_consoleapp
     {
         static void Main(string[] args)
         {
+            SayHello();
+            SayGoodbye();
+        }
+
+        public static void SayHello()
+        {
+            Console.WriteLine("Hello!!!");
+        }
+
+
+        public static void SayGoodbye()
+        {
+            Console.WriteLine("Ciao (That's fancy for 'goodbye')!!!");
         }
     }
 }
