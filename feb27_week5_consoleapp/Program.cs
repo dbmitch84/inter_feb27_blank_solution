@@ -10,11 +10,24 @@ namespace feb27_week5_consoleapp
     {
         static void Main(string[] args)
         {
-            string name = "Mitch";
+         
             SayHello();
             SayGoodbye();
+            
+            string name = "Mitch";
             SayHelloTo(name);
             SayGoodbyeTo(name);
+
+            
+            int sum2 = Sum(3,55);
+            Console.WriteLine("Your answer = "+sum2);
+            Console.WriteLine();// blank line for spacing
+
+            int a = 3;
+            int b = 55;
+            Console.WriteLine();
+            Sum(a,b);
+
         }
 
         public static void SayHello()
@@ -43,6 +56,12 @@ namespace feb27_week5_consoleapp
             
             Console.WriteLine("Ciao (That's fancy for 'goodbye') {0}!!!", name);
             Console.WriteLine();// blank line for spacing
+        }
+
+        public static int Sum(int a, int b)
+        {
+            Console.WriteLine();// blank line for spacing
+            return (a + b);       
         }
 
     }
